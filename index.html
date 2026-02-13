@@ -1,167 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MrEnder | Diwakar Sharma | Full Stack Developer</title>
-    <meta name="description" content="MrEnder also known as Diwakar Sharma is a Full Stack Developer, Web Developer, VPS Hosting Specialist and Coding Expert.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Diwakar Sharma",
-      "alternateName": "MrEnder",
-      "url": "https://diwakar2dev.github.io",
-      "image": "https://diwakar2dev.github.io/profile.jpg",
-      "jobTitle": "Full Stack Developer",
-      "description": "Full Stack Developer, Web Maker, VPS Hosting Specialist and Coding Expert."
-    }
-    </script>
+<title>MrEnder | Diwakar Sharma | Full Stack Developer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0d0d0d, #1a0033);
-            color: white;
-            text-align: center;
-        }
+<meta name="description" content="MrEnder also known as Diwakar Sharma is a Full Stack Developer, Web Developer and Coding Expert.">
 
-        header {
-            padding: 60px 20px;
-        }
+<!-- Google Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Diwakar Sharma",
+  "alternateName": "MrEnder",
+  "url": "https://diwakar2dev.github.io",
+  "image": "https://diwakar2dev.github.io/profile.jpg",
+  "jobTitle": "Full Stack Developer",
+  "description": "Full Stack Developer, VPS Specialist, Discord Bot Developer and Web Expert."
+}
+</script>
 
-        h1 {
-            font-size: 50px;
-            color: #a855f7;
-            margin-bottom: 10px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        h2 {
-            margin-top: 0;
-            font-weight: normal;
-        }
+body {
+    background: #0f0f1a;
+    color: white;
+    overflow-x: hidden;
+}
 
-        .profile-img {
-            width: 200px;
-            border-radius: 20px;
-            box-shadow: 0 0 25px #a855f7;
-            margin-top: 20px;
-        }
+/* Background Glow */
+body::before {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #7c3aed55, transparent 70%);
+    top: -200px;
+    left: -200px;
+    z-index: -1;
+}
 
-        .logo-img {
-            width: 180px;
-            margin-top: 20px;
-        }
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
 
-        .section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 30px;
-            background: #111;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(168,85,247,0.3);
-        }
+.hero h1 {
+    font-size: 60px;
+    background: linear-gradient(90deg, #a855f7, #6d28d9);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-        .skills {
-            text-align: left;
-            margin-top: 20px;
-        }
+.typing {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #c084fc;
+}
 
-        .skill {
-            margin-bottom: 15px;
-        }
+/* Glass Card */
+.card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 30px rgba(124,58,237,0.2);
+}
 
-        .bar {
-            height: 8px;
-            background: #333;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+/* Profile Image */
+.profile {
+    width: 180px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #7c3aed;
+    margin-bottom: 20px;
+}
 
-        .bar-fill {
-            height: 8px;
-            background: #a855f7;
-        }
+/* Skills */
+.skill {
+    margin: 20px 0;
+}
 
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background: #0a0a0a;
-        }
+.bar {
+    height: 8px;
+    background: #222;
+    border-radius: 20px;
+    overflow: hidden;
+}
 
-        a {
-            color: #a855f7;
-            text-decoration: none;
-        }
-    </style>
+.fill {
+    height: 8px;
+    background: linear-gradient(90deg, #a855f7, #6d28d9);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: #aaa;
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<section class="hero">
     <h1>MrEnder</h1>
+    <div class="typing" id="typing"></div>
+</section>
+
+<div class="card" style="text-align:center;">
+    <img src="profile.jpg" class="profile" alt="Diwakar Sharma">
+
     <h2>Diwakar Sharma</h2>
-    <p>Full Stack Developer | Web Developer | Programmer</p>
+    <p>Full Stack Developer | VPS Specialist | Web Expert</p>
+</div>
 
-    <!-- Real Photo -->
-    <img src="profile.jpg" alt="Diwakar Sharma Photo" class="profile-img">
-
-    <!-- Logo -->
-    <br>
-    <img src="logo.png" alt="MrEnder Logo" class="logo-img">
-</header>
-
-<div class="section">
-    <h3>About Me</h3>
+<div class="card">
+    <h2>About Me</h2>
     <p>
-        I am Diwakar Sharma, also known as MrEnder.  
-        Passionate Full Stack Developer with strong experience in frontend and backend technologies.
-        Skilled in VPS Hosting, Cloudflare setup, Discord Bot Development, and Minecraft Server management.
+        I am Diwakar Sharma, also known as MrEnder.
+        Passionate Full Stack Developer with strong knowledge in HTML, CSS,
+        JavaScript and backend technologies.
+        Experienced in VPS Hosting, Cloudflare setup,
+        Discord Bot Development and Minecraft Server management.
     </p>
 </div>
 
-<div class="section">
-    <h3>Skills</h3>
+<div class="card">
+    <h2>Skills</h2>
 
-    <div class="skills">
-        <div class="skill">
-            HTML / CSS
-            <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-        </div>
-
-        <div class="skill">
-            JavaScript
-            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-        </div>
-
-        <div class="skill">
-            Node.js
-            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-        </div>
-
-        <div class="skill">
-            VPS & Cloudflare
-            <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
-        </div>
-
-        <div class="skill">
-            Discord Bot Development
-            <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-        </div>
+    <div class="skill">
+        HTML / CSS
+        <div class="bar"><div class="fill" style="width:95%"></div></div>
     </div>
-</div>
 
-<div class="section">
-    <h3>Contact</h3>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: <a href="https://github.com/diwakar2dev">github.com/diwakar2dev</a></p>
+    <div class="skill">
+        JavaScript
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        Node.js
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        VPS & Cloudflare
+        <div class="bar"><div class="fill" style="width:92%"></div></div>
+    </div>
+
 </div>
 
 <footer>
-    © 2026 MrEnder | Diwakar Sharma
+© 2026 MrEnder | Diwakar Sharma
 </footer>
 
-</body
+<!-- Typing Animation Script -->
+<script>
+const text = ["Full Stack Developer 💻", "Web Maker 🌐", "VPS Expert ⚡", "MrEnder 👑"];
+let index = 0;
+let charIndex = 0;
+let currentText = "";
+let isDeleting = false;
+
+function typeEffect() {
+    if (index >= text.length) index = 0;
+
+    if (!isDeleting && charIndex <= text[index].length) {
+        currentText = text[index].substring(0, charIndex++);
+    } else if (isDeleting && charIndex >= 0) {
+        currentText = text[index].substring(0, charIndex--);
+    }
+
+    document.getElementById("typing").innerHTML = currentText;
+
+    if (charIndex === text[index].length) isDeleting = true;
+    if (charIndex === 0) {
+        isDeleting = false;
+        index++;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+</script>
+
+</body>
+</html>
