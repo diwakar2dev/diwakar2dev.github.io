@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>MrEnder | Diwakar Sharma | Full Stack Developer</title>
     <meta name="description" content="MrEnder also known as Diwakar Sharma is a Full Stack Developer, Web Developer, VPS Hosting Specialist and Coding Expert.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -19,52 +22,146 @@
 
     <style>
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #0d0d0d, #1a0033);
             color: white;
-            font-family: Arial;
             text-align: center;
-            padding: 50px;
         }
+
+        header {
+            padding: 60px 20px;
+        }
+
         h1 {
-            color: #a855f7;
             font-size: 50px;
+            color: #a855f7;
+            margin-bottom: 10px;
         }
+
         h2 {
-            color: #ffffff;
+            margin-top: 0;
+            font-weight: normal;
         }
-        img {
+
+        .profile-img {
             width: 200px;
             border-radius: 20px;
+            box-shadow: 0 0 25px #a855f7;
             margin-top: 20px;
-            box-shadow: 0 0 20px #a855f7;
         }
-        .box {
-            margin-top: 30px;
+
+        .logo-img {
+            width: 180px;
+            margin-top: 20px;
+        }
+
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
             background: #111;
-            padding: 25px;
             border-radius: 15px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            box-shadow: 0 0 15px rgba(168,85,247,0.3);
+        }
+
+        .skills {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .skill {
+            margin-bottom: 15px;
+        }
+
+        .bar {
+            height: 8px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 8px;
+            background: #a855f7;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #0a0a0a;
+        }
+
+        a {
+            color: #a855f7;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
-<h1>MrEnder</h1>
-<h2>Diwakar Sharma</h2>
-<p>Full Stack Developer | Web Developer | Programmer</p>
+<header>
+    <h1>MrEnder</h1>
+    <h2>Diwakar Sharma</h2>
+    <p>Full Stack Developer | Web Developer | Programmer</p>
 
-<img src="profile.jpg" alt="MrEnder Photo">
+    <!-- Real Photo -->
+    <img src="profile.jpg" alt="Diwakar Sharma Photo" class="profile-img">
 
-<div class="box">
+    <!-- Logo -->
+    <br>
+    <img src="logo.png" alt="MrEnder Logo" class="logo-img">
+</header>
+
+<div class="section">
     <h3>About Me</h3>
     <p>
-        Passionate Full Stack Developer with strong experience in HTML, CSS, JavaScript and backend technologies.
-        Skilled in VPS Hosting, Cloudflare setup, Discord Bot development and Minecraft Server management.
+        I am Diwakar Sharma, also known as MrEnder.  
+        Passionate Full Stack Developer with strong experience in frontend and backend technologies.
+        Skilled in VPS Hosting, Cloudflare setup, Discord Bot Development, and Minecraft Server management.
     </p>
 </div>
 
-</body>
-</html>
+<div class="section">
+    <h3>Skills</h3>
+
+    <div class="skills">
+        <div class="skill">
+            HTML / CSS
+            <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+
+        <div class="skill">
+            JavaScript
+            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            Node.js
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+            VPS & Cloudflare
+            <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+        </div>
+
+        <div class="skill">
+            Discord Bot Development
+            <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>Contact</h3>
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: <a href="https://github.com/diwakar2dev">github.com/diwakar2dev</a></p>
+</div>
+
+<footer>
+    © 2026 MrEnder | Diwakar Sharma
+</footer>
+
+</body
